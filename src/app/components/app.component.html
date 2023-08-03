@@ -1,0 +1,22 @@
+<h1 class="app-title">Search for Cat Pictures</h1>
+
+<form [formGroup]="searchForm" class="search-form">
+  <mat-form-field class="breed-field">
+    <mat-select formControlName="breed" class="breed-input">
+      <mat-option class="breed-input" *ngFor="let breed of breeds" [value]="breed">{{ breed.toUpperCase() }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="results-field">
+    <mat-label>Number of Results</mat-label>
+    <input matInput type="number" min="1" [max]="defaultResultsCount" formControlName="resultsCount" class="results-input">
+  </mat-form-field>
+
+  <button mat-raised-button (click)="search()" class="search-button">Search</button>
+</form>
+
+<search-results *ngIf="filteredCatImages?.length" [filteredCatImages]="filteredCatImages">
+</search-results>
+
+<search-no-results *ngIf="filteredCatImages?.length === 0">
+</search-no-results>

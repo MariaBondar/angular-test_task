@@ -1,0 +1,10 @@
+<div class="image-grid">
+  <div class="image" *ngFor="let image of filteredCatImages">
+    <img [src]="image.url" alt="Cat Image" class="image-img">
+    <div class="overlay">
+      <div class="overlay-content">
+        <h4 class="image-title">Cat Image</h4>
+      </div>
+    </div>
+  </div>
+</div>

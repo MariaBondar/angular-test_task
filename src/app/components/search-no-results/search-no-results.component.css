@@ -1,0 +1,7 @@
+.no-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  text-transform: uppercase;
+}
