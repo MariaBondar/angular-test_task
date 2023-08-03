@@ -1,7 +1,7 @@
 This app built with modern technologies such as Angular, Angular Material, Reactive Forms, RxJS.
 
 Getting Started
-Follow these steps to get started with the Digital Store project:
+Follow these steps to get started with the project:
 
 1.Clone the repository:
 
