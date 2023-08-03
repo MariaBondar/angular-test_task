@@ -7,12 +7,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 
 import { AppComponent } from './app.component';
-import { SearchNoResultsModule } from './search-no-results/search-no-results.module';
-import { SearchResultsModule } from './search-results/search-results.module';
+import { SearchNoResultsComponent } from './search-no-results/search-no-results.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
+import { CatPictureSearchComponent } from './cat-picture-search/cat-picture-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SearchNoResultsComponent,
+    SearchResultsComponent,
+    CatPictureSearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,8 +25,6 @@ import { SearchResultsModule } from './search-results/search-results.module';
     HttpClientModule,
     MatInputModule,
     MatSelectModule,
-    SearchNoResultsModule,
-    SearchResultsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
